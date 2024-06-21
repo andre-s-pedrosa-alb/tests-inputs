@@ -8,8 +8,8 @@ on:
         default: "ola"
         description: "ola2"
 
-  schedule:
-    - cron: '*/5 * * * *'
+  #schedule:
+  #  - cron: '*/5 * * * *'
 
 jobs:
   job1:
