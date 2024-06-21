@@ -5,7 +5,7 @@ on:
     inputs:
       tests:
         type: string
-        default: "$AB"
+        default: "${{ AB }}"
         description: "ola2"
 
   #schedule:
