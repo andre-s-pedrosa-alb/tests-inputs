@@ -8,7 +8,7 @@ on:
         default: "ola"
         description: "ola2"
 
-  schedule: */5 * * * *
+  schedule: "*/5 * * * *"
 
 jobs:
   job1:
