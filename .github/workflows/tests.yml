@@ -5,7 +5,7 @@ on:
     inputs:
       tests:
         type: string
-        default: "${{ AB }}"
+        default: "${{ github.env.AB }}"
         description: "ola2"
 
   #schedule:
