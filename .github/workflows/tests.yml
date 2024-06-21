@@ -27,6 +27,8 @@ jobs:
           echo "${{ inputs.tests }}"
 
   job3:
+    concurrency:
+      group: test-portal
     needs:
       - job1
     runs-on: ubuntu-latest
@@ -35,6 +37,8 @@ jobs:
           echo "${{ inputs.tests }}"
 
   job4:
+    concurrency:
+      group: test-portal
     needs:
       - job1
     runs-on: ubuntu-latest
