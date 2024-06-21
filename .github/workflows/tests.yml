@@ -29,7 +29,6 @@ jobs:
   job3:
     needs:
       - job1
-    if: false
     runs-on: ubuntu-latest
     steps:
       - run: |
@@ -38,7 +37,6 @@ jobs:
   job4:
     needs:
       - job1
-    if: false
     runs-on: ubuntu-latest
     steps:
       - run: |
