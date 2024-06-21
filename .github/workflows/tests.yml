@@ -5,7 +5,7 @@ on:
     inputs:
       tests:
         type: string
-        default: "${{ github.env.AB }}"
+        default: "${{ vars.AB }}"
         description: "ola2"
 
   #schedule:
@@ -13,6 +13,23 @@ on:
 
 jobs:
   job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "${{ inputs.tests }}"
+  job2:
+    needs:
+      - job1
+    if: false
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "${{ inputs.tests }}"
+
+  job3:
+    needs:
+      - job2
+    if: false
     runs-on: ubuntu-latest
     steps:
       - run: |
